@@ -1,0 +1,13 @@
+# PRTA three-edge source exposure v0.1 — implementation and bounded test
+
+Date: 2026-11-19. User requested implementation based on `absence_red_blue_v6.zip`. The original v6 experiment exhibits a preexisting blue substrate observed under unchanged compositing when a permitted red overlay construction is withheld, not an absence converted into blue.
+
+Implemented a discrete three-edge triangular contact packet with source IDs, edge role (`edge_0` to `edge_2`), authored latest-constructed-contact observation law, permitted withholding witness, source-identified unknown vs withheld distinction, and mandatory-contact rejection. No coordinate axes or angle calculations are used. This is an authored oriented-contact abstract model; physical embedding in arbitrary PRTA placements and a distinct PRTA numerical optimization effect are **not established**.
+
+**Constructed arithmetic control:** starting values (2,3), targets (21,35), register cap 7, bound 100. Construct 5=2+3, 7=5+2. Optional 10=5+5 overwrites the register containing 7. With overlay, must rebuild 7 then multiply 7*3=21 and 7*5=35: 6 instructions. Withhold the overlay and redundant rebuild: 4 instructions, every target still witnessed. When 10 is itself required, the withheld program is invalid; a mandatory contact also cannot be withheld; no substrate produces no magically exposed value. 9/9 executable tests passed.
+
+**Full competition negative-control sweep:** The exact public-contributor-attributed 141,086-instruction portfolio was independently validated across all 1,000 scored puzzles. For each program tested candidate single-instruction omissions keeping every subsequent register reference unchanged. 114,188 attempts; **0 legal removals**; output remains 141,086, 1,000/1,000 valid, output SHA-256 `21d1d5245de5d41810e06ce6435df99059b2ba8a35f2bfcde3256e827675a5d7`. No Kaggle submission warranted. Execution time ~10.15 s in the test container.
+
+**Scope:** This experiment does not test coordinated register rewrites, novel intermediate construction, actual triangulated face incidence, or PRTA-native whole-grammar optimization. The 2-step control saving is an instance of preserving a preexisting helper from an optional overwrite, not proof of a newly discovered arithmetic identity. The source-provided native red/blue v6 experiment remains distinct from this implemented analogy.
+
+Executable script, nine tests, README and audit JSON: `prta_three_contact_exposure_v0_1.zip` supplied in the conversation. Next test: two-or-more-step source/edge-aware rewrite with independent numerical target audit, compared to an equal-budget non-PRTA optimizer.
