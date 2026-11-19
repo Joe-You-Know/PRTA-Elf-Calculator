@@ -12,7 +12,7 @@ class CoreTests(unittest.TestCase):
 
     def test_exact_division_required(self):
         with self.assertRaisesRegex(ValueError, "inexact"):
-            validate(self.p, [["+",0,0,1],["/",1,0,2],["/",1,2,3]])
+            validate(self.p, [["/",0,0,1],["+",1,1,2],["/",0,2,3]])
 
     def test_prune_unused_event(self):
         noisy = self.program + [["+",0,0,5]]

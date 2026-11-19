@@ -2,7 +2,7 @@
 
 This is a safe baseline improvement, NOT a demonstrated PRTA solver.
 It retains every first witnessed target construction and its dependencies,
-then compacts register references to preserve behavior.
+and retains the original register references to preserve behavior.
 """
 from .core import Puzzle, trace, validate
 
