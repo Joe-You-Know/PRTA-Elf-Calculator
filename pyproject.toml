@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prta-elf-calculator"
+version = "0.1.0"
+description = "Primitive Rotating Triangular Algebra research for Elf Calculator optimization"
+requires-python = ">=3.10"
+
+[project.scripts]
+prta-elf = "prta_elf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
