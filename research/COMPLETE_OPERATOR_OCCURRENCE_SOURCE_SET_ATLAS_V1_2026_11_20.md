@@ -1,0 +1,23 @@
+# PRTA–Elf complete operator-occurrence and construction-set atlas v1 (2026-11-20)
+
+## Original research requirement
+User requires **every constructed event** and **every distinct original operator occurrence** indexed, including `+_1,+_2,-_i,*_i,/_i`, each exact source-operand occurrence and overlapping set memberships. Suffix is an occurrence index, NOT an increment. Never identify two operations merely from equal numerical outputs or identical arithmetic symbol; never infer a native PRTA spatial contact from scalar GCD alone.
+
+## Executed artifact
+Verified the exact original strong 134,002-instruction Elf Calculator submission across **1,000/1,000 scored puzzles**. A portable **SQLite atlas** contains the complete byte-preserved original puzzle and program files, each per-puzzle unique operator (stable original `op:step`), typed local-kind ordinal `+_i,-_i,*_i,/_i`, exact original register instruction, two independently indexed operand sources, fresh result occurrence, full integer values, and division quotient+remainder. It also preserves all initial inputs and all register write/overwrite transitions, first target-construction witnesses, per-operator-kind sets and source-incidence sets, and derived denominator factor pair records.
+
+Counts: 134,002 original distinct operators; 3,513 original input occurrences; 137,515 total distinct value occurrences; 268,004 original operand-role incidence edges (left/right never collapsed, including self-use); 137,515 total register write records; **99,329 overwrites** retain the overwritten source; 26,902 target witnesses. Operator-kind counts **+ 44,787, - 40,291, × 45,278, ÷ 3,646**; 62,227 source occurrences consumed by more than one distinct downstream operator. A peculiarity of this particular optimized bank: **zero independent duplicate numerical result occurrences within a puzzle**, independently checked; DO NOT generalize to other banks or conclude that operators are interchangeable.
+
+The atlas includes **4,566** GCD>1 pairs across *all* division occurrences (including self-division 1 producers), and **3,942** GCD>1 pairs with *both* divisions non-self, recovering the previous exact nontrivial GCD audit count. GCD is a derived numerical relationship, not original witnessed factor parenthood or native geometry.
+
+Complete SQLite tables: `puzzles`, `source_files`, `operations`, `occurrences`, `operand_edges`, `register_events`, `target_witnesses`, `pairwise_division_groups`. Views: `operator_sets`, `typed_operator_occurrences`, `shared_source_memberships`, `source_outdegree`, `operator_pair_shared_sources`, `live_register_intervals`, `equal_value_occurrence_sets`, `commutative_source_signatures`, `exact_division_sets`, `common_denominator_factor_sets`, `operator_result_value_sets`. Exact full transitive ancestral source closure is available on demand via `query_atlas.py` instead of duplicated exponential data dumps.
+
+**Independence:** No code from `build_atlas.py` is imported into `independent_verify.py`. It independently re-executes all 1,000 original puzzle programs with arithmetic legality, source/read-before-write identity, exact operator and operand-role records, register overwrites, target coverage, and factor-pair cross-checks: **1000/1000 programs, 134002/134002 operators, 137515/137515 occurrence/writes, 268004/268004 operand edges PASS**. **13/13** directed tests pass, including tampered original source ID and tampered operator kind rejection.
+
+## Package / publication
+`prta_elf_complete_operator_atlas_v1.zip` SHA256 **b3f492daf8e2a2b45b07fe5d68a5c1951bf14e43f5f5ab74b2fcfcc66ce65440**, 26 MB. Includes database, exact CSVs and hashes, build scripts and SQL views, independent replay, 13 tests, query CLI, full README and LaTeX source plus compiled 2-page PDF `atlas_report.pdf`. Official input SHA256 b0c70d849eca078a0e1cf9a4f7b47fd40b7435663f6f84de6725f84724500428; strong CSV SHA256 8288acc0e43c9b945c178842bac715a7a03bb5fe7a781b7e5cebfa493e9b17c9.
+
+## Epistemic constraints
+Complete with respect to **witnessed execution events and original program source incidences**. Does not enumerate all mathematical subsets or all unrealized alternative programs; relationships derivable from the retained complete event graph can be queried. A missing source at a stage is not permanent impossibility; absent geometric PRTA contacts are not invented or treated as proven. This atlas does not assert new PRTA-specific instruction savings nor a particular ECC curve.
+
+**Next:** derive complete typed higher-order source hyperedges and simultaneous operator-membership constraints from the atlas, then propose and independently test a contact-preserving PRTA optimizer against matched unrestricted conventional DAG rewrites.
