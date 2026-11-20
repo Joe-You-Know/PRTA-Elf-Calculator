@@ -1,0 +1,16 @@
+# PRTA Elf v2.8 — restore CIM v0.3/v10 native source geometry
+
+Date: 2026-11-19. **Implemented and tested**. Source archive attached in current conversation as `prta_elf_cim_native_rotational_shell_v2_8.zip`, SHA-256 `d4a976a50f1259ec9d9a946b9336e7bb01b1057dd7e2f96952ac6970ba86b9b8`. Contains reproducible native generator, seven unit tests, original Elf occurrence ledger, machine audit, two shell PNGs and ordinary occurrence DAG PNG.
+
+Source authorities in **Joe-You-Know/CIM**:
+- `causal-mathematics/ecc/experiments/collective_divisor_qr_v1/v12_cubic_rotation/V0_3_LINE_VERTEX_SHELL_RECURRENCE.md`.
+- `causal-mathematics/ecc/experiments/collective_divisor_qr_v1/v10_positive_shell/primitive_shell_ecc_v10.py`.
+- `causal-mathematics/ecc/experiments/collective_divisor_qr_v1/v12_cubic_rotation/rotation_equivariant_source_v12.py`.
+
+**Correction of v2.7:** The positive original index is **1**, with **no occupied zero-index and no self-distance**. Freeze old completed footprint; generate all candidate congruent equilateral triangular faces sharing full edge (E) or vertex-only (V) with it; preserve **all** original source parent contacts and UP/DOWN orientation. Stage order is **E before V**; select documented **counterclockwise** tie orientation separately in both classes. This is not same as the *post-completion cyclic shell E/V word*, nor a row/column scalar index layout. Contact verification uses integer vertex tags strictly as representational witnesses. Exact checked populations shell k: E(k)=6k-3, V(k)=6k+3, S(k)=12k, C(k)=1+6k(k+1). Six complete shells (253 positively occupied sources) verified; first shell includes three full-edge contacts and nine additional vertex-only. Whole-footprint third-turn site transformation preserves source set and edge incidence and has order 3. Seven independently executed tests passed (source primitive, population, stage class chronology, full source parents, rotation, 3+9 first ring, exact numerical Elf program).
+
+**Two distinct layers:** Native PRTA site index is distinct from an Elf arithmetic source occurrence ID, which is distinct from its numerical value. The 18-instruction public-reference `scored_0149` program (3 inputs, six targets) passed independent arithmetic replay. As an explicitly labeled visualization, its 21 initial/derived occurrences are overlaid in chronological order onto first 21 source indices. This chronology **does not certify** that Elf operand paths can actually be routed through the native generator's frozen footprint contacts. The 18-join physical embedding and deeper three-chain L/R/D per-site successor are **unresolved** and are not silently supplied by v10 E/V tie ordering.
+
+**Competition score:** 0 instructions saved. Prior public reference 141086 unchanged, not a new complete 1000-puzzle run. Next true score test requires remapping Elf dependency occurrence ownership to actual native L/R/D shell sources and legal contact routes, then using that data to synthesize shorter multi-output arithmetic programs. Mere geometrical relabeling cannot reduce arithmetic operation count.
+
+The research was built directly from GitHub files read through connected GitHub tools. Executable ZIP is a conversation attachment, not committed to GitHub in this note.
