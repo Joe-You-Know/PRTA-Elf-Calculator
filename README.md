@@ -46,3 +46,24 @@ Original contest files are **not bundled into the Git repository**. Supply them 
 ## Research principles
 
 Retain provenance of every constructed number and every lawful quotient–remainder extraction. Do not identify the absence of a construction with an existing zero-valued object. Do not count a PRTA rotation as free: if it changes a calculator value, compile it into scored arithmetic instructions.
+
+
+## Measured value-occurrence baseline (November 2026)
+
+An optional **conventional** shared-value compiler is now available:
+
+```bash
+python3 -m prta_elf.cli --puzzles data/puzzles.csv \
+  --programs data/sample_submission.csv --optimizer reuse \
+  --out results/submission_reuse.csv
+```
+
+The compiler uses the original event ledger, reuses live equal-valued
+results, and safely falls back to the provenance optimizer if register packing
+cannot be completed. Across the 1,000 scored sample programs it produced
+**1,433,802** verified instructions versus **1,490,379** originally,
+saving **56,577 (3.796148%)**. Direct reuse compiled 354 puzzles; 646 used
+fallback. These savings do **not** establish PRTA-specific performance.
+
+See `research/PRTA_V122_COMPETITION_BRIDGE.md` for the v122 occupied/absent
+contact interpretation and its unresolved physical face-attachment boundary.
